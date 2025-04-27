@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="col-6 text-end">
-                {{-- you can add a button here if needed --}}
+               
             </div>
         </div>
 
@@ -43,7 +43,7 @@
             </tbody>
         </table>
 
-        {{-- Pagination --}}
+      
         <div class="mt-3">
             {{ $bookings->links() }}
         </div>

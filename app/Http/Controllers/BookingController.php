@@ -26,7 +26,7 @@ class BookingController extends Controller
 
     public function view($id)
     {
-        // Fetch booking details
+        
         $booking = BookingModel::find($id);
 
         if (!$booking) {

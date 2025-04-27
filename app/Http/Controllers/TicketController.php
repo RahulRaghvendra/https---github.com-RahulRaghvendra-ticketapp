@@ -46,14 +46,13 @@ class TicketController extends Controller
                     throw new \Exception('No available seats.');
                 }
     
-                // Create a new booking
+            
                 BookingModel::create([
                     'event_id' => $event->id,
-                    'user_id' => auth()->id(), // Ensure the user is authenticated
-                    // Add other necessary booking details here
+                    'user_id' => auth()->id(), 
                 ]);
     
-                // Decrement the available seats
+              
                 $event->available_seats -= 1;
                 $event->save();
             
